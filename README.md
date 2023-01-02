@@ -1,7 +1,9 @@
 # GraphicsProject
 3D OpenGl project
 
-Train going through woods, train has two carts.
+ship with
 lots of trees
 
 Color scheme: random
+
+input: press any key to change background color from day to night
