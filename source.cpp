@@ -10,7 +10,11 @@
 #include <string>
 #include <cstring>
 #include <unistd.h>
- 
+using namespace std;
+
+string file = "/Users/vanillamice/Desktop/ship.mp3"; //file paths for the audio file
+string command = "afplay " + file + " &"; //string for the system command.
+
 void init(){
     glClearColor(0.0 , 0.0 , 0.0 , 1.0);
     glEnable(GL_DEPTH_TEST);
@@ -711,7 +715,7 @@ int main (int argc, char **argv)
     glutIdleFunc(idleFunc);
     glClearColor(0,0,0,1);
     textures();
- 
- 
+    system(command.c_str()); //used to make the audio play
     glutMainLoop();
 }
+ 
